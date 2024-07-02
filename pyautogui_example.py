@@ -3,7 +3,6 @@ import pyperclip
 import time
 
 REPORT_PATH = 'C:\\users\\admin\\desktop\월간보고서'
-REPORT_PATH = 'C:\\users\장동우\\desktop\월간보고서'
 print(REPORT_PATH)
 pyperclip.copy(REPORT_PATH) # 경로 복사
 pag.hotkey('win','e') #탐색기 ON
@@ -25,4 +24,4 @@ for i in range(1,7): #1월부터 6월까지
     concatenate_text += pyperclip.paste() #텍스트에 합치기
     concatenate_text += '\n' #줄구분
     pag.hotkey('alt','f4') #보고서 닫기
-pyperclip.copy(concatenate_text)
+pyperclip.copy(concatenate_text) # 합친 텍스트를 클립보드로 복사
